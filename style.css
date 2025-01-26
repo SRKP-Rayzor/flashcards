@@ -1,0 +1,102 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f9;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 90%;
+	max-width: 600px;
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 20px;
+	color: #333;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+#flashcards-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.flashcard {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: center;
+	padding: 30px;
+	cursor: pointer;
+	transition: transform 0.3s;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.flashcard:hover {
+	transform: scale(1.05);
+}
+
+.flashcard.flipped {
+	background-color: #007bff;
+	color: white;
+}
+
+.flashcard .delete-btn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: #ED6E54;
+	color: white;
+	padding: 0px 0px;
+	border: none;
+	border-radius: 30px;
+	width: 20px;
+	height: 20px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#export-list {
+	height: 80px;
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	margin-top: 10px;
+}
+#card-counter {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
